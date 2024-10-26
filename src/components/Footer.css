@@ -1,0 +1,166 @@
+/* Footer container */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+  }
+  .footer-section img{
+    width:60px;
+    height:60px;
+    object-fit: cover;
+    margin-left: 32px;
+    
+  }
+  .footer-section h4 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .footer-section p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 18px;
+  }
+  
+  .footer-section a:hover {
+    color: #4CAF50;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 10px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: start;
+    gap:6px
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+    font-size: 30px;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #4CAF50;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #aaa;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+  }
+  
+  /* Responsive Design */
+  /* @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  } */
+
+
+
+
+  .footer {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  .social-icons a {
+    margin-right: 15px;
+    font-size: 20px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #4CAF50;
+    transform: scale(1.2);
+  }
+
+  
+
+  .footer-section {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideIn 1s ease-out forwards;
+    animation-delay: 0.5s; /* Delays the animation for a smoother effect */
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  
+  
+
+
+  .footer-section .fas {
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-section .fas:hover {
+    transform: translateY(-5px);
+  }
+
+  
+
+  
+  
